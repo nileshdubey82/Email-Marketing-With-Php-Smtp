@@ -1,0 +1,38 @@
+body {
+    background-color: #f8f9fa;
+}
+
+#header {
+    background-color: #2F3C7E;
+    padding: 15px 0;
+    color: #FBEAEB;
+    text-align: center;
+}
+
+#sidebar {
+    background-color: #2F3C7E;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    padding-top: 70px;
+    width: 200px;
+}
+
+#sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    color: #FBEAEB;
+    display: block;
+}
+
+#sidebar a:hover {
+    background-color: #101820;
+}
+
+#content {
+    margin-left: 250px;
+    padding: 20px;
+}
