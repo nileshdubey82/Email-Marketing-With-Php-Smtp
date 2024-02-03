@@ -5,6 +5,19 @@ include_once('leftbar.php');
 ?>
 
 <div class="container mt-5">
+    <?php 
+    if(isset($_REQUEST['v']) && $_REQUEST['v']==1){
+        echo "<span class='bg-success text-white' style='padding:10px; border-radius:10px;margin-bottom:20px'>Email has been sent...</span>";
+    }
+    if(isset($_REQUEST['v']) && $_REQUEST['v']==2){
+        echo "<span class='bg-danger text-white' style='padding:10px; border-radius:10px;margin-bottom:20px'>Email sending Error...</span>";
+    }
+    
+    ?>
+    <br>
+    <br>
+    <br>
+    <h5>Write Your Mail Here..</h5>
     <form action="sendmail.php" method="POST" target="_blank">
         <div class="form-group">
             <label for="recipient">Recipient:</label>
@@ -22,10 +35,10 @@ fdf
             <textarea class="form-control" id="ckeditor" name="message" rows="4"></textarea>
         </div>
         <br>
-        <div class="form-group">
+        <!-- <div class="form-group">
             <label for="attach_file">File:</label>
             <input type="file" class="form-control" id="attach_file" name="attach_file">
-        </div>
+        </div> -->
         <br>
         <br>
         <br>
